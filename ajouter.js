@@ -11,6 +11,7 @@
             return;
         }
 
+        
         const livre = {
             titre: titre,
             auteur: document.getElementById("auteur").value || "Inconnu",

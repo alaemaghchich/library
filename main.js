@@ -1,9 +1,10 @@
  const bibliotheque = [];
 
     document.getElementById("ajouter").addEventListener("click", () => {
-        window.open("ajouter.html", "_blank", "width=520,height=750");
+        window.open("ajouter.html", "_blank", "width=500,height=750");
     });
 
+    
     function afficher(filtres = bibliotheque) {
         const listes = document.getElementById("listeslivres");
         listes.innerHTML = filtres.length === 0 
@@ -14,7 +15,7 @@
             const carte = document.createElement("div");
             carte.className = "carte";
 
-            const img = livre.image?.trim() ? livre.image : "https://via.placeholder.com/300x400/200/400?text=Grimoire+Perdu";
+           const img = livre.image; 
 
             carte.innerHTML = `
                 <img src="${img}" alt="Couverture">
@@ -37,15 +38,31 @@
         statistic();
     }
 
-    function supprimer(code) {
-        if (confirm("Burn this grimoire forever?")) {
-            const index = bibliotheque.findIndex(l => l.code === code);
-            if (index !== -1) {
-                bibliotheque.splice(index, 1);
-                afficher();
-            }
+   function supprimer(code) {
+    // Step 1: Nsowlo luser wach bgha y7yd had lktab
+    // confirm() katdir popup f navigateur li fih "Are you sure you want to delete the book?" w 2 boutons: OK w Cancel
+    if (confirm("Are you sure you want to delete the book?")) {
+        
+        // Step 2: kan9albo 3la lktab li bghina nms7oh mn larrey
+        // findIndex kat9aleb 3la Index dyal awel elemnt fel array condition dyalo s7i7
+        //ida L9ina lkab y3tina ra9em dyl balas ( 0, 1, 2...) ida mal9inax index = -1
+        const index = bibliotheque.findIndex(l => l.code === code);
+        
+        // step 3: nxofo wax kayna Lktab
+        //ida kan 3adna ya3ni index !== -1 nms7oh
+        //ida ma3adnaxi ya3ni index = -1 mayw9a3 walo
+        if (index !== -1) {
+            
+            // Step 4: N7ydo lktab mn list
+            // splice kat7yd 1 item mn larray
+            //kat3ni ra9em lplace dyal elemnt fel array
+            bibliotheque.splice(index, 1); 
+            afficher();
         }
     }
+}
+
+
 
     document.getElementById("search").addEventListener("input", function () {
         const text = this.value.toLowerCase().trim();
