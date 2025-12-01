@@ -8,7 +8,7 @@
     function afficher(filtres = bibliotheque) {
         const listes = document.getElementById("listeslivres");
         listes.innerHTML = filtres.length === 0 
-            ? "<p style='text-align:center; color:#800; font-size:2rem; grid-column:1/-1; padding:50px;'>No grimoire found in the darkness...</p>"
+            ? "<p style='text-align:center; color:#800; font-size:2rem; grid-column:1/-1; padding:50px;'>No grimoire found in the darkness.....</p>"
             : "";
 
         filtres.forEach(livre => {
