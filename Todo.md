@@ -4,29 +4,26 @@ This repository is a collaborative project involving three team members working 
 ## Team Members
 - **Alae Maghchich** – Developer
 - **Tarik Buferdi** – Tester
-- **Issam Abchiri** – Scrum Master
+- **Issam Abchri** – Scrum Master
 
 ## Tasks
+**alae maghchich**
+- [x]HTML structure
+- [x]JS functionality
+- [x]CSS styling
+- [x]page integration
+- [x]bug fixes
 
-### Setup
-- [x] Create project folder and initial HTML/CSS/JS files – Alae
-- [ ] Setup Git repository and workflow – Alae/Issam
+**tarik bufardi**
+- [x]Test all functionalities (add/remove/search)
+- [x]check responsiveness
+- [x]report bugs
+- [x]verify UI across browsers
+- [x]validate data inputs
 
-### Core Functionality
-- [x] Display grimoires list dynamically – Alae
-- [x] Add grimoire popup page – Alae
-- [x] Add book functionality – Alae
-- [x] Remove book functionality – Alae
-- [ ] Search filter – Alae
-- [ ] Statistics counter – Alae
-- [ ] Test all functionalities – Tarik
-
-### Styling & UX
-- [x] Dark/mystical theme and background – Alae
-- [x] Style cards and buttons – Alae
-- [ ] Responsive design – Alae
-- [ ] UI testing across browsers – Tarik
-
-### Deployment
-- [ ] Deploy project online – Alae
-- [ ] Final review and adjustments – Team
+**issam abchri**
+- [x]Manage project workflow
+- [x]track progress
+- [x]organize team meetings
+- [x]ensure tasks are completed on time
+- [x]handle Git branch coordination
