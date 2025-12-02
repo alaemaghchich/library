@@ -24,7 +24,7 @@
                 <p><strong>Year :</strong> ${livre.annee}</p>
                 <p><strong>Price :</strong> ${livre.prix}</p>
                 <p><strong>Status :</strong> <span style="color:${livre.checkbox ? '#0f0' : '#f00'}; text-shadow:0 0 10px currentColor;">
-                    ${livre.checkbox ? "Available" : "Owned"}
+                    ${livre.checkbox ? "Available" : "unavailable"}
                 </span></p>
             `;
 
