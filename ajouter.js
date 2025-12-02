@@ -25,7 +25,7 @@
             window.opener.ajouterLivre(livre);
             alert("Grimoire added successfully!");
             form.reset();
-            setTimeout(() => window.close(), 500);
+            setTimeout(() => window.close(), 300);
         } else {
             alert("The door to the main library is closed...");
         }
